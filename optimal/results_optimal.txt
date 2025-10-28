@@ -1,0 +1,100 @@
+Shapes:
+Train: (14396, 14) (14396,)
+Val: (1800, 14) (1800,)
+Test: (1800, 14) (1800,)
+Num classes: 11 Input dims: 14
+GenreClassifier(
+  (net): Sequential(
+    (0): Linear(in_features=14, out_features=256, bias=True)
+    (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.3, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU()
+    (7): Dropout(p=0.15, inplace=False)
+    (8): Linear(in_features=128, out_features=11, bias=True)
+  )
+)
+Epoch 1/50 | Train Loss 1.6705 Acc 0.407 | Val Loss 1.5086 Acc 0.454
+Epoch 2/50 | Train Loss 1.5348 Acc 0.452 | Val Loss 1.4664 Acc 0.461
+Epoch 3/50 | Train Loss 1.5035 Acc 0.455 | Val Loss 1.4412 Acc 0.472
+Epoch 4/50 | Train Loss 1.4889 Acc 0.460 | Val Loss 1.4398 Acc 0.469
+Epoch 5/50 | Train Loss 1.4746 Acc 0.464 | Val Loss 1.4281 Acc 0.478
+Epoch 6/50 | Train Loss 1.4590 Acc 0.472 | Val Loss 1.4184 Acc 0.477
+Epoch 7/50 | Train Loss 1.4573 Acc 0.468 | Val Loss 1.4085 Acc 0.487
+Epoch 8/50 | Train Loss 1.4475 Acc 0.470 | Val Loss 1.4114 Acc 0.474
+Epoch 9/50 | Train Loss 1.4386 Acc 0.474 | Val Loss 1.4077 Acc 0.474
+Epoch 10/50 | Train Loss 1.4311 Acc 0.478 | Val Loss 1.4094 Acc 0.483
+Epoch 11/50 | Train Loss 1.4288 Acc 0.476 | Val Loss 1.4044 Acc 0.488
+Epoch 12/50 | Train Loss 1.4141 Acc 0.484 | Val Loss 1.3941 Acc 0.486
+Epoch 13/50 | Train Loss 1.4173 Acc 0.483 | Val Loss 1.3921 Acc 0.482
+Epoch 14/50 | Train Loss 1.4139 Acc 0.480 | Val Loss 1.3865 Acc 0.489
+Epoch 15/50 | Train Loss 1.4060 Acc 0.482 | Val Loss 1.3853 Acc 0.489
+Epoch 16/50 | Train Loss 1.4117 Acc 0.481 | Val Loss 1.3923 Acc 0.477
+Epoch 17/50 | Train Loss 1.3987 Acc 0.487 | Val Loss 1.3902 Acc 0.491
+Epoch 18/50 | Train Loss 1.3942 Acc 0.489 | Val Loss 1.3993 Acc 0.481
+Epoch 19/50 | Train Loss 1.4000 Acc 0.487 | Val Loss 1.3880 Acc 0.480
+Epoch 20/50 | Train Loss 1.3916 Acc 0.488 | Val Loss 1.3849 Acc 0.487
+Epoch 21/50 | Train Loss 1.3872 Acc 0.488 | Val Loss 1.3814 Acc 0.485
+Epoch 22/50 | Train Loss 1.3796 Acc 0.491 | Val Loss 1.3839 Acc 0.484
+Epoch 23/50 | Train Loss 1.3811 Acc 0.492 | Val Loss 1.3865 Acc 0.484
+Epoch 24/50 | Train Loss 1.3778 Acc 0.494 | Val Loss 1.3844 Acc 0.482
+Epoch 25/50 | Train Loss 1.3790 Acc 0.494 | Val Loss 1.3820 Acc 0.482
+Epoch 26/50 | Train Loss 1.3757 Acc 0.492 | Val Loss 1.3785 Acc 0.487
+Epoch 27/50 | Train Loss 1.3686 Acc 0.495 | Val Loss 1.3839 Acc 0.475
+Epoch 28/50 | Train Loss 1.3703 Acc 0.496 | Val Loss 1.3800 Acc 0.494
+Epoch 29/50 | Train Loss 1.3599 Acc 0.496 | Val Loss 1.3808 Acc 0.488
+Epoch 30/50 | Train Loss 1.3635 Acc 0.497 | Val Loss 1.3770 Acc 0.490
+Epoch 31/50 | Train Loss 1.3560 Acc 0.500 | Val Loss 1.3791 Acc 0.493
+Epoch 32/50 | Train Loss 1.3604 Acc 0.498 | Val Loss 1.3788 Acc 0.485
+Epoch 33/50 | Train Loss 1.3579 Acc 0.501 | Val Loss 1.3834 Acc 0.481
+Epoch 34/50 | Train Loss 1.3554 Acc 0.499 | Val Loss 1.3745 Acc 0.488
+Epoch 35/50 | Train Loss 1.3552 Acc 0.494 | Val Loss 1.3790 Acc 0.482
+Epoch 36/50 | Train Loss 1.3509 Acc 0.503 | Val Loss 1.3715 Acc 0.492
+Epoch 37/50 | Train Loss 1.3430 Acc 0.503 | Val Loss 1.3733 Acc 0.488
+Epoch 38/50 | Train Loss 1.3505 Acc 0.500 | Val Loss 1.3728 Acc 0.487
+Epoch 39/50 | Train Loss 1.3473 Acc 0.504 | Val Loss 1.3736 Acc 0.493
+Epoch 40/50 | Train Loss 1.3453 Acc 0.506 | Val Loss 1.3693 Acc 0.494
+Epoch 41/50 | Train Loss 1.3473 Acc 0.500 | Val Loss 1.3681 Acc 0.491
+Epoch 42/50 | Train Loss 1.3393 Acc 0.503 | Val Loss 1.3772 Acc 0.488
+Epoch 43/50 | Train Loss 1.3354 Acc 0.503 | Val Loss 1.3738 Acc 0.490
+Epoch 44/50 | Train Loss 1.3364 Acc 0.507 | Val Loss 1.3710 Acc 0.489
+Epoch 45/50 | Train Loss 1.3266 Acc 0.504 | Val Loss 1.3741 Acc 0.493
+Epoch 46/50 | Train Loss 1.3372 Acc 0.502 | Val Loss 1.3726 Acc 0.492
+Epoch 47/50 | Train Loss 1.3269 Acc 0.506 | Val Loss 1.3762 Acc 0.494
+Epoch 48/50 | Train Loss 1.3151 Acc 0.504 | Val Loss 1.3699 Acc 0.492
+Epoch 49/50 | Train Loss 1.3112 Acc 0.513 | Val Loss 1.3691 Acc 0.491
+Epoch 50/50 | Train Loss 1.3080 Acc 0.515 | Val Loss 1.3695 Acc 0.496
+Loaded best model with Val Acc: 0.4955555555555556
+
+--- Validation Set Results (for best model) ---
+Validation Accuracy: 0.4955555555555556
+Validation F1 (macro): 0.463156722182231
+Validation F1 (weighted): 0.46534543862903105
+Test Accuracy: 0.4872222222222222
+Test F1 (macro): 0.4517292415501441
+Test F1 (weighted): 0.45954120873148
+
+Classification Report:
+                precision    recall  f1-score   support
+
+Acoustic/Folk       0.34      0.37      0.35        67
+    Alt_Music       0.00      0.00      0.00       143
+        Blues       0.47      0.45      0.46       134
+    Bollywood       0.51      0.63      0.57        41
+      Country       0.26      0.21      0.24        28
+       HipHop       0.57      0.68      0.62       133
+    Indie Alt       0.42      0.27      0.32       264
+ Instrumental       0.68      0.89      0.77        47
+        Metal       0.63      0.57      0.60       196
+          Pop       0.51      0.51      0.51       279
+         Rock       0.45      0.65      0.53       468
+
+     accuracy                           0.49      1800
+    macro avg       0.44      0.48      0.45      1800
+ weighted avg       0.45      0.49      0.46      1800
+
+
+Saved model to genre_model.pth
+Done.

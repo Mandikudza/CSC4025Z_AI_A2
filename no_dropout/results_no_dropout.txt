@@ -1,0 +1,66 @@
+Shapes:
+Train: (14396, 14) (14396,)
+Val: (1800, 14) (1800,)
+Test: (1800, 14) (1800,)
+Num classes: 11 Input dims: 14
+GenreClassifier(
+  (net): Sequential(
+    (0): Linear(in_features=14, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=128, out_features=64, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=64, out_features=11, bias=True)
+  )
+)
+Epoch 1/25 | Train Loss 1.7402 Acc 0.399 | Val Loss 1.5425 Acc 0.442
+Epoch 2/25 | Train Loss 1.5129 Acc 0.456 | Val Loss 1.4902 Acc 0.461
+Epoch 3/25 | Train Loss 1.4753 Acc 0.467 | Val Loss 1.4627 Acc 0.472
+Epoch 4/25 | Train Loss 1.4538 Acc 0.473 | Val Loss 1.4505 Acc 0.478
+Epoch 5/25 | Train Loss 1.4391 Acc 0.476 | Val Loss 1.4548 Acc 0.467
+Epoch 6/25 | Train Loss 1.4229 Acc 0.482 | Val Loss 1.4390 Acc 0.480
+Epoch 7/25 | Train Loss 1.4124 Acc 0.486 | Val Loss 1.4325 Acc 0.473
+Epoch 8/25 | Train Loss 1.4033 Acc 0.488 | Val Loss 1.4363 Acc 0.477
+Epoch 9/25 | Train Loss 1.3943 Acc 0.489 | Val Loss 1.4344 Acc 0.459
+Epoch 10/25 | Train Loss 1.3870 Acc 0.489 | Val Loss 1.4391 Acc 0.462
+Epoch 11/25 | Train Loss 1.3767 Acc 0.495 | Val Loss 1.4250 Acc 0.478
+Epoch 12/25 | Train Loss 1.3702 Acc 0.495 | Val Loss 1.4171 Acc 0.476
+Epoch 13/25 | Train Loss 1.3644 Acc 0.497 | Val Loss 1.4287 Acc 0.469
+Epoch 14/25 | Train Loss 1.3599 Acc 0.503 | Val Loss 1.4187 Acc 0.472
+Epoch 15/25 | Train Loss 1.3512 Acc 0.500 | Val Loss 1.4152 Acc 0.469
+Epoch 16/25 | Train Loss 1.3462 Acc 0.504 | Val Loss 1.4206 Acc 0.470
+Epoch 17/25 | Train Loss 1.3397 Acc 0.507 | Val Loss 1.4133 Acc 0.474
+Epoch 18/25 | Train Loss 1.3381 Acc 0.505 | Val Loss 1.4193 Acc 0.475
+Epoch 19/25 | Train Loss 1.3303 Acc 0.506 | Val Loss 1.4185 Acc 0.468
+Epoch 20/25 | Train Loss 1.3257 Acc 0.509 | Val Loss 1.4104 Acc 0.482
+Epoch 21/25 | Train Loss 1.3199 Acc 0.511 | Val Loss 1.4164 Acc 0.467
+Epoch 22/25 | Train Loss 1.3156 Acc 0.515 | Val Loss 1.4106 Acc 0.474
+Epoch 23/25 | Train Loss 1.3114 Acc 0.514 | Val Loss 1.4291 Acc 0.457
+Epoch 24/25 | Train Loss 1.3059 Acc 0.516 | Val Loss 1.4222 Acc 0.477
+Epoch 25/25 | Train Loss 1.3014 Acc 0.515 | Val Loss 1.4137 Acc 0.478
+Loaded best model with Val Acc: 0.4822222222222222
+
+Test Accuracy: 0.48277777777777775
+Test F1 (macro): 0.45260033379589887
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.39      0.36      0.38        67
+           1       0.00      0.00      0.00       143
+           2       0.44      0.45      0.44       134
+           3       0.69      0.59      0.63        41
+           4       0.22      0.25      0.23        28
+           5       0.64      0.59      0.61       133
+           6       0.40      0.23      0.30       264
+           7       0.69      0.85      0.76        47
+           8       0.67      0.54      0.60       196
+           9       0.46      0.52      0.49       279
+          10       0.45      0.69      0.54       468
+
+    accuracy                           0.48      1800
+   macro avg       0.46      0.46      0.45      1800
+weighted avg       0.45      0.48      0.45      1800
+
+
+Saved model to genre_model.pth
+Done.
