@@ -29,8 +29,6 @@ print("Val:", X_val.shape, y_val.shape)
 print("Test:", X_test.shape, y_test.shape)
 
 # Get parameters from the loaded data
-# The data from Person 1 is already scaled, so we don't need to re-scale.
-# The 'y' data is already encoded (0, 1, 2...), so we don't need LabelEncoder.
 num_classes = len(np.unique(y_train))
 input_size = X_train.shape[1]
 print("Num classes:", num_classes, "Input dims:", input_size)
@@ -171,8 +169,6 @@ with torch.no_grad():
 print("Test Accuracy:", accuracy_score(all_true, all_preds))
 print("Test F1 (macro):", f1_score(all_true, all_preds, average='macro'))
 
-# We need the class names for the report. 
-# We can create a simple list since we know they are 0-10.
 class_names = [str(i) for i in range(num_classes)]
 print("\nClassification Report:\n", classification_report(all_true, all_preds, target_names=class_names))
 
