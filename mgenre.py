@@ -1,4 +1,4 @@
-# This is a complete Kaggle Notebook script for your music genre classification assignment.
+# This is a complete Kaggle Notebook script for music genre classification.
 # You can copy-paste this into a Kaggle Notebook, upload the datasets (train.csv, test.xls, submission.xls),
 # and run it. Make sure to enable GPU in the notebook settings for faster training.
 
@@ -74,7 +74,7 @@ X_val, X_test_internal, y_val, y_test_internal = train_test_split(X_temp, y_temp
 print("Train/Val/Test split:", X_train.shape, X_val.shape, X_test_internal.shape)
 
 # Ethical considerations: Music genre classification can perpetuate cultural stereotypes or biases in data 
-# (e.g., overrepresentation of certain genres/artists). Ensure diverse data; avoid using for discriminatory purposes.
+
 
 # Step 4: Baseline - K-Nearest Neighbors
 knn = KNeighborsClassifier(n_neighbors=5)
