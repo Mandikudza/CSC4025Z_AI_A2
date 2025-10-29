@@ -1,20 +1,20 @@
 Music Genre Classification — How to reproduce experiments
 
-Contents of this submission:
 
-This submission contains the code and preprocessed files needed to reproduce the experiments (note: the full/raw Kaggle dataset is not included). Specifically:
+This submission contains the code and preprocessed files needed to reproduce the experiments (note: the full/raw Kaggle dataset is not included). 
+The specific contents of this submission include:
 
 - Cleaned/preprocessed CSVs under `dataset/cleaned_data/` (e.g.,  `X_test_clean.csv`, `y_test_clean.csv`).
-- Experiment folders with training scripts and saved results:
+- Experiment folders with training scripts and saved results (base kaggle code found here: https://www.kaggle.com/code/maryammather/neural-network):
     - `first_version/` 
     - `extra_hidden_layer/`
     - `no_dropout/`
     - `optimal/`
     - `weighted_loss/` (uses weighted loss to address class imbalance)
-- `mgenre.py` — a Kaggle-notebook-style end-to-end script for preprocessing, training baseline models, and producing a submission file.
+- `mgenre.py` — a Kaggle-notebook-style end-to-end script for preprocessing, training baseline models, and producing a submission file. (can also be found here: https://www.kaggle.com/code/mandikudzadangwa/mgenre-py)
 
 
-Overview"
+Overview
 
 This repository contains several PyTorch-based experiments for music genre classification.
 The full dataset is not included in this submission. To reproduce results you must run the provided notebook/scripts directly on Kaggle.
@@ -22,6 +22,7 @@ The full dataset is not included in this submission. To reproduce results you mu
 Kaggle Notebook:
 
     https://www.kaggle.com/code/maryammather/neural-network
+    
 
 You can also download the dataset locally using the Kaggle CLI (recommended) or by using the Kaggle Notebook 'Add data' UI and run the dataset with this code.
 
